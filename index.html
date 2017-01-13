@@ -2,6 +2,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <script>
+    function onDeviceReady() {
+    document.removeEventListener('deviceready', onDeviceReady, false);
+    admob.initAdmob("ca-app-pub-2845586603814577/5675332242","ca-app-pub-2845586603814577/2582265042");
+    admob.showBanner(admob.BannerSize.BANNER, admob.Position.BOTTOM_APP);
+  </script>
 <title>RailJump</title>
 <link rel="icon" type="image/png" href="favicon.ico">
 <link rel="stylesheet" href="app.css"><link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Donegal+One%7CGloria+Hallelujah%7CPermanent+Marker%7CMystery+Quest&amp;subset=latin,latin,latin,latin" media="all">
